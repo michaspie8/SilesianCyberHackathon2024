@@ -68,17 +68,29 @@ app.post("/wypadek", (req, res) => {
         }
       let category = "unknown";
         const categories = [
-            
+            "wstrząs mózgu",
+            "złamanie otwarte",
+            "zatrzymanie akcji serca",
+            "niedrożność dróg oddechowych",
+            "amputacja",
+            "rana",
+            "środowiskowe"
         ];
+        const stringOfCategories = categories.join(", ");
         //use chatgpt to categorize the description of the accident
         const response = openai.api().chatCompletion.create({
             model: "gpt-3.5-turbo",
             messages: [
-                {role: "system", content: "You will get two descriptions of the accident (secound one is from speech to text). Please categorize the accident described in those descriptions. Available categories are: "},
+                {role: "system", content: "You will get two descriptions of the accident (secound one is from speech to text). Please categorize the accident described in those descriptions. Available categories are: "+stringOfCategories},
                 {role: "user", content: desc},
             ],
         });
+        //if the chat response is a category, save it
+       if(categories.includes(response.choices[0].message.content)){
 
+       }else{
+           category = "unknown";
+       }
       res.status(201).send({message: "Data saved successfully", category: category});
   });
 
