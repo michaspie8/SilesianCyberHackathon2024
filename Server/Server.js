@@ -61,10 +61,15 @@ app.post("/wypadek", (req, res) => {
                     file: audioData,
                     model: "whisper-1",
                 });
+
+
+
             }
-
         }
-
+      let category = "unknown";
+        const categories = [
+            
+        ];
         //use chatgpt to categorize the description of the accident
         const response = openai.api().chatCompletion.create({
             model: "gpt-3.5-turbo",
@@ -73,6 +78,8 @@ app.post("/wypadek", (req, res) => {
                 {role: "user", content: desc},
             ],
         });
-    });
+
+      res.status(201).send({message: "Data saved successfully", category: category});
+  });
 
 }
