@@ -42,17 +42,41 @@ connection.query("CREATE DATABASE IF NOT EXISTS wypadek ;", (err) =>
     }
 });
 console.log("Database created");
-
-//create wypaddek table if it does not exist
-connection.query(
+const categories = [
+    "wstrząs mózgu",
+    "złamanie otwarte",
+    "zatrzymanie akcji serca",
+    "niedrożność dróg oddechowych",
+    "amputacja",
+    "rana",
+    "środowiskowe",
+    "wypadek komunikacyjny"
+];
+//create tables and fill the table kategoria with categories
+connection.query((
     `CREATE TABLE IF NOT EXISTS wypadek (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     surname VARCHAR(255) NOT NULL,
     description VARCHAR(255),
     audioData VARCHAR(255),
-    category VARCHAR(255) DEFAULT 'nieznane'
-  ) ;`,
+    category VARCHAR(255) DEFAULT "nieznane"
+  ) ;
+  CREATE OR REPLACE TABLE kategoria (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(4096)
+  ) ;
+    delete from kategoria ;
+INSERT INTO kategoria (id, name, description) VALUES 
+(null, "wstrząs mózgu", "Upewnij się, że poszkodowany jest stabilny i zapewnij mu odpoczynek. 2. Zastosuj zimny okład na obszarze głowy, aby zmniejszyć obrzęk. 3. Monitoruj stan świadomości i reakcje poszkodowanego przez okres czasu."),
+(null, "złamanie otwarte", "1. Zabezpiecz miejsce zdarzenia i upewnij się, że wszyscy są bezpieczni. 2. Nałóż opatrunek, który zatamuje krwawienie, unikając nacisku na ranę. 3. Unieruchom złamaną kończynę przy użyciu stabilizującego przedmiotu, takiego jak deska."),
+(null, "zatrzymanie akcji serca", "1. Natychmiast rozpocznij resuscytację krążeniowo-oddechową (RKO). 2. Zadzwoń po pomoc medyczną i użyj defibrylatora, jeśli jest dostępny. 3. Wykonuj cykle ucisków klatki piersiowej i oddechów ratowniczych zgodnie z wytycznymi."),
+(null, "niedrożność dróg oddechowych", "1. Spróbuj usunąć przeszkodę mechanicznie, jeśli jest widoczna. 2. Wykonuj manewr Heimlicha u osób dorosłych lub dzieci, jeśli są przytomne i mają trudności z oddychaniem. 3. Jeśli poszkodowany traci przytomność, rozpocznij resuscytację krążeniowo-oddechową (RKO)."),
+(null, "amputacja", "1. Natychmiast zabezpiecz miejsce zdarzenia i zatrzymaj krwawienie. 2. Zbierz odseparowaną część ciała i przechowaj ją w czystym, chłodnym miejscu. 3. Zadzwoń po pomoc medyczną i przetransportuj poszkodowanego i odseparowaną część ciała do najbliższego szpitala."),
+(null, "rana", "1. Oczyść ranę delikatnie wodą lub solą fizjologiczną. 2. Nałóż opatrunek, który zabezpieczy ranę przed zanieczyszczeniem i zatrzyma krwawienie. 3. Monitoruj ranę pod kątem infekcji i zapewnij regularną wymianę opatrunku."),
+(null, "środowiskowe", "1. Zabezpiecz miejsce zdarzenia, aby uniknąć dodatkowych niebezpieczeństw dla siebie i innych. 2. Zadzwoń po odpowiednie służby ratownicze, takie jak straż pożarna lub służby medyczne. 3. Udziel pierwszej pomocy, jeśli to bezpieczne, zgodnie z potrzebami poszkodowanych."),
+(null, "wypadek komunikacyjny", "1. Udziel pierwszej pomocy poszkodowanym, starając się nie narażać siebie na dodatkowe niebezpieczeństwo. 2. Zabezpiecz miejsce wypadku, oznaczając je i ostrzegając innych kierowców. 3. Zadzwoń po odpowiednie służby ratownicze i współpracuj z nimi, aby zapewnić szybką i skuteczną pomoc.") ;`).replace(/\n/g, " "),
     (err) =>
     {
         if (err)
@@ -62,6 +86,7 @@ connection.query(
     }
 );
 
+//test endpoint
 app.get("/test", (req, res) =>
 {
     const headers = {
@@ -77,10 +102,10 @@ app.get("/test", (req, res) =>
                 audioData: "test"
             })
         }
-    ).then(response =>
+    ).then((response2)=>
         {
-            console.log(response);
-            res.status(200).send({message: "Test completed", response: response});
+            console.log(response2);
+            res.status(200).send({message: "Test completed", response: response2});
         }
     ).catch(err =>
     {
@@ -89,20 +114,12 @@ app.get("/test", (req, res) =>
     });
 });
 
+//send data abt accident, save it to the database and categorize it
 app.post("/wypadek", (req, res) =>
     {
         let {name, surname, desc, audioData} = req.body;
                 let category = "nieznane";
-                const categories = [
-                    "wstrząs mózgu",
-                    "złamanie otwarte",
-                    "zatrzymanie akcji serca",
-                    "niedrożność dróg oddechowych",
-                    "amputacja",
-                    "rana",
-                    "środowiskowe",
-                    "wypadek komunikacyjny"
-                ];
+
                 const stringOfCategories = categories.join(", ");
                 //use chatgpt to categorize the description of the accident
                 let responseStr = "";
