@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d nova obavijest</item>
-    <item quantity="few">%d nove obavijesti</item>
-    <item quantity="other">%d novih obavijesti</item>
-  </plurals>
+        <item quantity="one">%d nova obavijest</item>
+        <item quantity="few">%d nove obavijesti</item>
+        <item quantity="other">%d novih obavijesti</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Idi na početnu"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Natrag"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Više opcija"</string>
@@ -30,7 +30,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Pošalji upit"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Glasovno pretraživanje"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Dijeli s"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Dijeli putem aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Dijeli putem
+        aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Sažmi"</string>
     <string gender="unknown" name="alert_description">Upozorenje</string>
     <string name="bottomsheet_action_collapse">Sažmite donju tablicu</string>
@@ -41,7 +43,9 @@
     <string gender="unknown" name="catalyst_dev_menu_header">React native dev izbornik (%1$s)</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">Pokretanje %1$s</string>
     <string name="character_counter_content_description">Uneseno znakova: %1$d od %2$d</string>
-    <string name="character_counter_overflowed_content_description">Premašeno je ograničenje broja znakova: %1$d od %2$d</string>
+    <string name="character_counter_overflowed_content_description">Premašeno je ograničenje broja znakova: %1$d od
+        %2$d
+    </string>
     <string name="clear_text_end_icon_content_description">Brisanje teksta</string>
     <string gender="unknown" name="combobox_description">Kombinirani okvir</string>
     <string name="error_icon_content_description">Pogreška</string>
@@ -59,18 +63,23 @@
     <string name="material_minute_selection">Odaberite minute</string>
     <string name="material_minute_suffix">%1$s min</string>
     <string name="material_timepicker_am">AM</string>
-    <string name="material_timepicker_clock_mode_description">Prijeđite na način rada sata da biste unijeli vrijeme.</string>
+    <string name="material_timepicker_clock_mode_description">Prijeđite na način rada sata da biste unijeli vrijeme.
+    </string>
     <string name="material_timepicker_hour">Sat</string>
     <string name="material_timepicker_minute">Minuta</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Odabir vremena</string>
-    <string name="material_timepicker_text_input_mode_description">Prijeđite na način unosa teksta da biste unijeli vrijeme.</string>
+    <string name="material_timepicker_text_input_mode_description">Prijeđite na način unosa teksta da biste unijeli
+        vrijeme.
+    </string>
     <string gender="unknown" name="menu_description">Izbornik</string>
     <string gender="unknown" name="menubar_description">Traka izbornika</string>
     <string gender="unknown" name="menuitem_description">Stavka izbornika</string>
     <string name="mtrl_badge_numberless_content_description">Nova obavijest</string>
     <string name="mtrl_chip_close_icon_content_description">Ukloni %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Više od %1$d novih obavijesti</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Više od %1$d novih
+        obavijesti
+    </string>
     <string name="mtrl_picker_a11y_next_month">Prijelaz na sljedeći mjesec</string>
     <string name="mtrl_picker_a11y_prev_month">Pomicanje na prethodni mjesec</string>
     <string name="mtrl_picker_announce_current_selection">Trenutačan odabir: %1$s</string>

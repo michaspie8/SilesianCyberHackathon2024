@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d نئی اطلاع</item>
-    <item quantity="other">%d نئی اطلاعات</item>
-  </plurals>
+        <item quantity="one">%d نئی اطلاع</item>
+        <item quantity="other">%d نئی اطلاعات</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"گھر کی طرف نیویگیٹ کریں"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"اوپر نیویگیٹ کریں"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"مزید اختیارات"</string>
@@ -29,7 +29,10 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"استفسار جمع کرائیں"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"صوتی تلاش"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"اس کے ساتھ اشتراک کریں"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> کے ساتھ اشتراک کریں"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g
+            id="APPLICATION_NAME">%s
+    </ns1:g> کے ساتھ اشتراک کریں"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"سکیڑیں"</string>
     <string gender="unknown" name="alert_description">الرٹ</string>
     <string name="bottomsheet_action_collapse">نیچے کی شیٹ کو سکیڑیں</string>
@@ -63,13 +66,16 @@
     <string name="material_timepicker_minute">منٹ</string>
     <string name="material_timepicker_pm">رات</string>
     <string name="material_timepicker_select_time">وقت منتخب کریں</string>
-    <string name="material_timepicker_text_input_mode_description">وقت ان پٹ کے لیے ٹیکسٹ ان پٹ وضع پر سوئچ کریں۔</string>
+    <string name="material_timepicker_text_input_mode_description">وقت ان پٹ کے لیے ٹیکسٹ ان پٹ وضع پر سوئچ کریں۔
+    </string>
     <string gender="unknown" name="menu_description">مینیو</string>
     <string gender="unknown" name="menubar_description">مینیو بار</string>
     <string gender="unknown" name="menuitem_description">مینیو آئٹم</string>
     <string name="mtrl_badge_numberless_content_description">نئی اطلاع</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s کو ہٹائیں</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d سے زیادہ نئی اطلاعات</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d سے زیادہ نئی
+        اطلاعات
+    </string>
     <string name="mtrl_picker_a11y_next_month">اگلے مہینہ میں منتقل کریں</string>
     <string name="mtrl_picker_a11y_prev_month">گزشتہ ماہ میں منتقل کریں</string>
     <string name="mtrl_picker_announce_current_selection">موجودہ انتخاب: %1$s</string>

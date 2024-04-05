@@ -25,7 +25,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Enviar consulta"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Recolher"</string>
     <string gender="unknown" name="alert_description">Alerta</string>
     <string gender="unknown" name="catalyst_dev_menu_header">Menu de desenvolvedor de reações nativas (%1$s)</string>

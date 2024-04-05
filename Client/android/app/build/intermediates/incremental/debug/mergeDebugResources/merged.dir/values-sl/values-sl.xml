@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d novo obvestilo</item>
-    <item quantity="two">%d novi obvestili</item>
-    <item quantity="few">%d nova obvestila</item>
-    <item quantity="other">%d novih obvestil</item>
-  </plurals>
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
+        <item quantity="other">%d novih obvestil</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Krmarjenje na začetek"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Pomik navzgor"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Več možnosti"</string>
@@ -31,7 +31,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Pošiljanje poizvedbe"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Glasovno iskanje"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Deljenje z:"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Deljenje z drugimi prek aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Deljenje z drugimi prek
+        aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Strnitev"</string>
     <string gender="unknown" name="alert_description">Opozorilo</string>
     <string name="bottomsheet_action_collapse">Strnitev razdelka na dnu zaslona</string>
@@ -41,7 +43,8 @@
     <string name="bottomsheet_drag_handle_content_description">Ročica za vlečenje</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">V teku %1$s</string>
     <string name="character_counter_content_description">Število vnesenih znakov je %1$d od %2$d</string>
-    <string name="character_counter_overflowed_content_description">Omejitev števila znakov je presegla %1$d od %2$d</string>
+    <string name="character_counter_overflowed_content_description">Omejitev števila znakov je presegla %1$d od %2$d
+    </string>
     <string name="clear_text_end_icon_content_description">Izbris besedila</string>
     <string gender="unknown" name="combobox_description">Kombinirano polje</string>
     <string name="error_icon_content_description">Napaka</string>
@@ -64,13 +67,17 @@
     <string name="material_timepicker_minute">Minuta</string>
     <string name="material_timepicker_pm">pop.</string>
     <string name="material_timepicker_select_time">Izberite uro</string>
-    <string name="material_timepicker_text_input_mode_description">Preklopite na način za vnašanje besedila, da vnesete čas.</string>
+    <string name="material_timepicker_text_input_mode_description">Preklopite na način za vnašanje besedila, da vnesete
+        čas.
+    </string>
     <string gender="unknown" name="menu_description">Meni</string>
     <string gender="unknown" name="menubar_description">Meni</string>
     <string gender="unknown" name="menuitem_description">Element v meniju</string>
     <string name="mtrl_badge_numberless_content_description">Novo obvestilo</string>
     <string name="mtrl_chip_close_icon_content_description">Odstranite %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Več kot toliko novih obvestil: %1$d</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Več kot toliko novih
+        obvestil: %1$d
+    </string>
     <string name="mtrl_picker_a11y_next_month">Spremeni na naslednji mesec</string>
     <string name="mtrl_picker_a11y_prev_month">Spremeni na prejšnji mesec</string>
     <string name="mtrl_picker_announce_current_selection">Trenutna izbira: %1$s</string>

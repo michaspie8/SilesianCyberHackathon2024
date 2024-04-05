@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="zero">%d jaunu paziņojumu</item>
-    <item quantity="one">%d jauns paziņojums</item>
-    <item quantity="other">%d jauni paziņojumi</item>
-  </plurals>
+        <item quantity="zero">%d jaunu paziņojumu</item>
+        <item quantity="one">%d jauns paziņojums</item>
+        <item quantity="other">%d jauni paziņojumi</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Pārvietoties uz sākuma ekrānu"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Pārvietoties uz augšu"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Citas opcijas"</string>
     <string msgid="4692188335987374352" name="abc_action_mode_done">"Gatavs"</string>
     <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Skatīt visu"</string>
-    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Izvēlieties lietotni"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Izvēlieties lietotni"
+    </string>
     <string msgid="4215997306490295099" name="abc_capital_off">"IZSLĒGT"</string>
     <string msgid="884982626291842264" name="abc_capital_on">"IESLĒGT"</string>
     <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alternēšanas taustiņš +"</string>
@@ -30,7 +31,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Iesniegt vaicājumu"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Meklēt ar balsi"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Kopīgot ar:"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Kopīgot ar lietojumprogrammu <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Kopīgot ar
+        lietojumprogrammu <ns1:g id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Sakļaut"</string>
     <string gender="unknown" name="alert_description">Paziņojums</string>
     <string name="bottomsheet_action_collapse">Sakļaut ekrāna apakšdaļas lapu</string>
@@ -41,7 +44,9 @@
     <string gender="unknown" name="catalyst_dev_menu_header">Reakciju vietējā izstrādātāju izvēlne (%1$s)</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">Darbojas %1$s</string>
     <string name="character_counter_content_description">Ievadītās rakstzīmes: %1$d no %2$d</string>
-    <string name="character_counter_overflowed_content_description">Pārsniegts rakstzīmju skaita ierobežojums (%1$d no %2$d)</string>
+    <string name="character_counter_overflowed_content_description">Pārsniegts rakstzīmju skaita ierobežojums
+        (%1$d no %2$d)
+    </string>
     <string name="clear_text_end_icon_content_description">Notīrīt tekstu</string>
     <string gender="unknown" name="combobox_description">Kombinētais lodziņš</string>
     <string name="error_icon_content_description">Kļūda</string>
@@ -52,7 +57,8 @@
     <string gender="unknown" name="imagebutton_description">Poga, attēls</string>
     <string name="item_view_role_description">Cilne</string>
     <string gender="unknown" name="link_description">Saite</string>
-    <string name="material_clock_toggle_content_description">Atlasiet “AM” (priekšpusdienā) vai “PM” (pēcpusdienā).</string>
+    <string name="material_clock_toggle_content_description">Atlasiet “AM” (priekšpusdienā) vai “PM” (pēcpusdienā).
+    </string>
     <string name="material_hour_24h_suffix">%1$s stundas</string>
     <string name="material_hour_selection">Atlasiet stundu</string>
     <string name="material_hour_suffix">plkst. %1$s</string>
@@ -64,13 +70,17 @@
     <string name="material_timepicker_minute">Minūte</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Laika atlasīšana</string>
-    <string name="material_timepicker_text_input_mode_description">Lai ievadītu laiku, ieslēdziet teksta ievades režīmu.</string>
+    <string name="material_timepicker_text_input_mode_description">Lai ievadītu laiku, ieslēdziet teksta ievades
+        režīmu.
+    </string>
     <string gender="unknown" name="menu_description">Izvēlne</string>
     <string gender="unknown" name="menubar_description">Izvēļņu josla</string>
     <string gender="unknown" name="menuitem_description">Izvēlnes opcija</string>
     <string name="mtrl_badge_numberless_content_description">Jauns paziņojums</string>
     <string name="mtrl_chip_close_icon_content_description">Noņemt: %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Vairāk nekā %1$d jauni paziņojumi</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Vairāk nekā %1$d jauni
+        paziņojumi
+    </string>
     <string name="mtrl_picker_a11y_next_month">Pāriet uz nākamo mēnesi</string>
     <string name="mtrl_picker_a11y_prev_month">Pāriet uz iepriekšējo mēnesi</string>
     <string name="mtrl_picker_announce_current_selection">Pašreizējā atlase: %1$s</string>

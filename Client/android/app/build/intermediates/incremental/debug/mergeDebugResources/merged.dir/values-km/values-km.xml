@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">ការជូនដំណឹងថ្មី %d</item>
-    <item quantity="other">ការជូនដំណឹងថ្មី %d</item>
-  </plurals>
+        <item quantity="one">ការជូនដំណឹងថ្មី %d</item>
+        <item quantity="other">ការជូនដំណឹងថ្មី %d</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"​ទៅទំព័រដើម"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"រំកិលឡើងលើ"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ជម្រើសច្រើនទៀត"</string>
@@ -29,7 +29,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ដាក់បញ្ជូន​សំណួរ"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"ស្វែងរក​តាម​សំឡេង"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"ចែករំលែក​ជា​មួយ"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"ចែក​រំលែក​ជា​មួយ <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"ចែក​រំលែក​ជា​មួយ <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"បង្រួម"</string>
     <string gender="unknown" name="alert_description">ជូន​ដំណឹង</string>
     <string name="bottomsheet_action_collapse">បង្រួមសន្លឹក​ខាងក្រោម</string>
@@ -63,13 +65,17 @@
     <string name="material_timepicker_minute">នាទី​</string>
     <string name="material_timepicker_pm">ល្ងាច</string>
     <string name="material_timepicker_select_time">ជ្រើស​ម៉ោង</string>
-    <string name="material_timepicker_text_input_mode_description">ប្តូរ​ទៅ​មុខងារ​បញ្ចូល​អក្សរ​សម្រាប់​ការ​បញ្ចូល​ម៉ោង។</string>
+    <string name="material_timepicker_text_input_mode_description">
+        ប្តូរ​ទៅ​មុខងារ​បញ្ចូល​អក្សរ​សម្រាប់​ការ​បញ្ចូល​ម៉ោង។
+    </string>
     <string gender="unknown" name="menu_description">ម៉ឺនុយ</string>
     <string gender="unknown" name="menubar_description">របារម៉ឺនុយ</string>
     <string gender="unknown" name="menuitem_description">ធាតុម៉ឺនុយ</string>
     <string name="mtrl_badge_numberless_content_description">ការជូនដំណឹងថ្មី</string>
     <string name="mtrl_chip_close_icon_content_description">លុប %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">ការជូនដំណឹង​ថ្មីៗ​លើស %1$d ហើយ</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">ការជូនដំណឹង​ថ្មីៗ​លើស
+        %1$d ហើយ
+    </string>
     <string name="mtrl_picker_a11y_next_month">ប្ដូរ​ទៅ​ខែបន្ទាប់</string>
     <string name="mtrl_picker_a11y_prev_month">ប្ដូរ​ទៅ​ខែមុន</string>
     <string name="mtrl_picker_announce_current_selection">ការជ្រើសរើស​បច្ចុប្បន្ន៖ %1$s</string>

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d njoftim i ri</item>
-    <item quantity="other">%d njoftime të reja</item>
-  </plurals>
+        <item quantity="one">%d njoftim i ri</item>
+        <item quantity="other">%d njoftime të reja</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Orientohu për në shtëpi"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Ngjitu lart"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Opsione të tjera"</string>
     <string msgid="4692188335987374352" name="abc_action_mode_done">"U krye"</string>
     <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Shfaq çdo gjë"</string>
-    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Zgjidh një aplikacion"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Zgjidh një aplikacion"
+    </string>
     <string msgid="4215997306490295099" name="abc_capital_off">"JOAKTIV"</string>
     <string msgid="884982626291842264" name="abc_capital_on">"AKTIV"</string>
     <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
@@ -29,7 +30,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Dërgo pyetjen"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Kërkim me zë"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Ndaje me"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Ndaje me <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Ndaje me <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Palos"</string>
     <string gender="unknown" name="alert_description">Sinjalizim</string>
     <string name="bottomsheet_action_collapse">Palos fletën e poshtme</string>
@@ -40,7 +43,8 @@
     <string gender="unknown" name="catalyst_dev_menu_header">Menyja e zhvilluesit e React Native (%1$s)</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">Duke ekzekutuar %1$s</string>
     <string name="character_counter_content_description">Karakteret e futura: %1$d nga %2$d</string>
-    <string name="character_counter_overflowed_content_description">Kufiri i karaktereve është kaluar: %1$d nga %2$d</string>
+    <string name="character_counter_overflowed_content_description">Kufiri i karaktereve është kaluar: %1$d nga %2$d
+    </string>
     <string name="clear_text_end_icon_content_description">Pastro tekstin</string>
     <string gender="unknown" name="combobox_description">Kuti kombinimi</string>
     <string name="error_icon_content_description">Gabim</string>
@@ -63,13 +67,17 @@
     <string name="material_timepicker_minute">Minuta</string>
     <string name="material_timepicker_pm">PD</string>
     <string name="material_timepicker_select_time">Zgjidh orën</string>
-    <string name="material_timepicker_text_input_mode_description">Kalo te modaliteti i hyrjes së tekstit për hyrjen e kohës.</string>
+    <string name="material_timepicker_text_input_mode_description">Kalo te modaliteti i hyrjes së tekstit për hyrjen e
+        kohës.
+    </string>
     <string gender="unknown" name="menu_description">Meny</string>
     <string gender="unknown" name="menubar_description">Shiriti i menysë</string>
     <string gender="unknown" name="menuitem_description">Artikull i menysë</string>
     <string name="mtrl_badge_numberless_content_description">Njoftim i ri</string>
     <string name="mtrl_chip_close_icon_content_description">Hiq %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Më shumë se %1$d njoftime të reja</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Më shumë se %1$d
+        njoftime të reja
+    </string>
     <string name="mtrl_picker_a11y_next_month">Ndrysho te muaji i ardhshëm</string>
     <string name="mtrl_picker_a11y_prev_month">Ndrysho te muaji i kaluar</string>
     <string name="mtrl_picker_announce_current_selection">Zgjedhja aktuale: %1$s</string>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d new notification</item>
-    <item quantity="other">%d new notifications</item>
-  </plurals>
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"গৃহ পৃষ্ঠালৈ যাওক"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"ওপৰলৈ যাওক"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"অধিক বিকল্প"</string>
@@ -29,7 +29,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"প্ৰশ্ন দাখিল কৰক"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"কণ্ঠধ্বনিৰ দ্বাৰা সন্ধান"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"ইয়াৰ জৰিয়তে শ্বেয়াৰ কৰক"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>ৰ জৰিয়তে শ্বেয়াৰ কৰক"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>ৰ জৰিয়তে শ্বেয়াৰ কৰক"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"সংকোচন কৰক"</string>
     <string name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
     <string name="bottomsheet_action_expand">Expand the bottom sheet</string>
@@ -37,7 +39,8 @@
     <string name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
     <string name="character_counter_content_description">%2$dটাৰ ভিতৰত %1$dটা বৰ্ণ লিখা হৈছে</string>
-    <string name="character_counter_overflowed_content_description">%2$dটাৰ ভিতৰত %1$dটা বৰ্ণৰ সীমা অতিক্ৰম কৰিছে</string>
+    <string name="character_counter_overflowed_content_description">%2$dটাৰ ভিতৰত %1$dটা বৰ্ণৰ সীমা অতিক্ৰম কৰিছে
+    </string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string gender="unknown" name="combobox_description">যুটীয়া বাকচ</string>
     <string name="error_icon_content_description">Error</string>
@@ -63,7 +66,9 @@
     <string gender="unknown" name="menu_description">মেন্যু</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_chip_close_icon_content_description">%1$sক আঁতৰাওক</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">More than %1$d new
+        notifications
+    </string>
     <string name="mtrl_picker_a11y_next_month">Change to next month</string>
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
     <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>

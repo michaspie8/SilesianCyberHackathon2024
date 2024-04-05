@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d ný tilkynning</item>
-    <item quantity="other">%d nýjar tilkynningar</item>
-  </plurals>
+        <item quantity="one">%d ný tilkynning</item>
+        <item quantity="other">%d nýjar tilkynningar</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Fara heim"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Fara upp"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Fleiri valkostir"</string>
@@ -29,7 +29,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Senda fyrirspurn"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Raddleit"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Deila með"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Deila með <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Deila með <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Minnka"</string>
     <string name="bottomsheet_action_collapse">Minnka blað neðst</string>
     <string name="bottomsheet_action_expand">Stækka blað neðst</string>
@@ -50,15 +52,19 @@
     <string name="material_minute_selection">Veldu mínútur</string>
     <string name="material_minute_suffix">%1$s mínútur</string>
     <string name="material_timepicker_am">f.h.</string>
-    <string name="material_timepicker_clock_mode_description">Skipta yfir í klukkustillingu til að færa inn tíma.</string>
+    <string name="material_timepicker_clock_mode_description">Skipta yfir í klukkustillingu til að færa inn tíma.
+    </string>
     <string name="material_timepicker_hour">Klukkustund</string>
     <string name="material_timepicker_minute">Mínúta</string>
     <string name="material_timepicker_pm">e.h.</string>
     <string name="material_timepicker_select_time">Veldu tíma</string>
-    <string name="material_timepicker_text_input_mode_description">Skipta yfir í textastillingu til að færa inn tíma.</string>
+    <string name="material_timepicker_text_input_mode_description">Skipta yfir í textastillingu til að færa inn tíma.
+    </string>
     <string name="mtrl_badge_numberless_content_description">Ný tilkynning</string>
     <string name="mtrl_chip_close_icon_content_description">Fjarlægja %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Yfir %1$d nýjar tilkynningar</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Yfir %1$d nýjar
+        tilkynningar
+    </string>
     <string name="mtrl_picker_a11y_next_month">Breyta í næsta mánuð</string>
     <string name="mtrl_picker_a11y_prev_month">Breyta í fyrri mánuð</string>
     <string name="mtrl_picker_announce_current_selection">Núverandi val: %1$s</string>

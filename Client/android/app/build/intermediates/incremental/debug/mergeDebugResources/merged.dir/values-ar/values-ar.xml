@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="zero">%d إشعار جديد</item>
-    <item quantity="one">إشعار جديد واحد (%d)</item>
-    <item quantity="two">إشعاران جديدان (%d)</item>
-    <item quantity="few">%d إشعارات جديدة</item>
-    <item quantity="many">%d إشعارًا جديدًا</item>
-    <item quantity="other">%d إشعار جديد</item>
-  </plurals>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
@@ -33,7 +33,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"بحث صوتي"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"تصغير"</string>
     <string gender="unknown" name="alert_description">تنبيه</string>
     <string name="bottomsheet_action_collapse">تصغير البطاقة السفلية</string>
@@ -67,13 +69,16 @@
     <string name="material_timepicker_minute">دقيقة</string>
     <string name="material_timepicker_pm">مساءً</string>
     <string name="material_timepicker_select_time">اختيار الوقت</string>
-    <string name="material_timepicker_text_input_mode_description">يُرجى التبديل إلى وضع إدخال النص لإدخال الوقت.</string>
+    <string name="material_timepicker_text_input_mode_description">يُرجى التبديل إلى وضع إدخال النص لإدخال الوقت.
+    </string>
     <string gender="unknown" name="menu_description">القائمة</string>
     <string gender="unknown" name="menubar_description">شريط القائمة</string>
     <string gender="unknown" name="menuitem_description">عنصر القائمة</string>
     <string name="mtrl_badge_numberless_content_description">إشعار جديد</string>
     <string name="mtrl_chip_close_icon_content_description">إزالة %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">يبلغ عدد الإشعارات الجديدة أكثر من %1$d.</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">يبلغ عدد الإشعارات
+        الجديدة أكثر من %1$d.
+    </string>
     <string name="mtrl_picker_a11y_next_month">التغيير إلى الشهر التالي</string>
     <string name="mtrl_picker_a11y_prev_month">التغيير إلى الشهر السابق</string>
     <string name="mtrl_picker_announce_current_selection">الاختيار الحالي: %1$s</string>

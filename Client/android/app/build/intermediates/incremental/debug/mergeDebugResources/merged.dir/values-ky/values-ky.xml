@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d жаңы билдирме</item>
-    <item quantity="other">%d жаңы билдирме</item>
-  </plurals>
+        <item quantity="one">%d жаңы билдирме</item>
+        <item quantity="other">%d жаңы билдирме</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Башкы бетке чабыттоо"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Мурунку экранга өтүү"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Дагы параметрлер"</string>
@@ -29,7 +29,10 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Сурам тапшыруу"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Айтып издөө"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Төмөнкү менен бөлүшүү"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> аркылуу бөлүшүү"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g
+            id="APPLICATION_NAME">%s
+    </ns1:g> аркылуу бөлүшүү"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Жыйыштыруу"</string>
     <string name="bottomsheet_action_collapse">Ылдыйкы экранды жыйыштыруу</string>
     <string name="bottomsheet_action_expand">Ылдыйкы экранды жайып көрсөтүү</string>
@@ -37,7 +40,9 @@
     <string name="bottomsheet_drag_handle_clicked">Эки жолу таптап, тизменин керектүү жерине сүйрөп баруу</string>
     <string name="bottomsheet_drag_handle_content_description">Тизменин керектүү жерине сүйрөп баруу</string>
     <string name="character_counter_content_description">%2$d ичинен %1$d символ киргизилди</string>
-    <string name="character_counter_overflowed_content_description">Символдордун саны коюлган %2$d чегинен %1$d символго ашып кетти</string>
+    <string name="character_counter_overflowed_content_description">Символдордун саны коюлган %2$d чегинен %1$d символго
+        ашып кетти
+    </string>
     <string name="clear_text_end_icon_content_description">Текстти тазалоо</string>
     <string name="error_icon_content_description">Ката</string>
     <string name="exposed_dropdown_menu_content_description">Түрүлмө менюну көрсөтүү</string>
@@ -58,11 +63,14 @@
     <string name="material_timepicker_minute">Мүнөт</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Убакыт тандоо</string>
-    <string name="material_timepicker_text_input_mode_description">Убакытты текст киргизүү режиминде киргизиңиз.</string>
+    <string name="material_timepicker_text_input_mode_description">Убакытты текст киргизүү режиминде киргизиңиз.
+    </string>
     <string gender="unknown" name="menu_description">Меню</string>
     <string name="mtrl_badge_numberless_content_description">Жаңы билдирме</string>
     <string name="mtrl_chip_close_icon_content_description">Мазмунду алып салуу (%1$s)</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d ашуун жаңы билдирме</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d ашуун жаңы
+        билдирме
+    </string>
     <string name="mtrl_picker_a11y_next_month">Кийинки айга өзгөртүү</string>
     <string name="mtrl_picker_a11y_prev_month">Мурунку айга өзгөртүү</string>
     <string name="mtrl_picker_announce_current_selection">Учурдагы тандоо: %1$s</string>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d 件の新しい通知</item>
-    <item quantity="other">%d 件の新しい通知</item>
-  </plurals>
+        <item quantity="one">%d 件の新しい通知</item>
+        <item quantity="other">%d 件の新しい通知</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"ホームに戻る"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"前に戻る"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"その他のオプション"</string>
@@ -29,7 +29,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"音声検索"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"共有"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>と共有"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>と共有"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"折りたたむ"</string>
     <string gender="unknown" name="alert_description">アラート</string>
     <string name="bottomsheet_action_collapse">ボトムシートを閉じる</string>
@@ -69,7 +71,8 @@
     <string gender="unknown" name="menuitem_description">メニューアイテム</string>
     <string name="mtrl_badge_numberless_content_description">新しい通知</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s を削除します</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d 件以上の新しい通知</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d 件以上の新しい通知
+    </string>
     <string name="mtrl_picker_a11y_next_month">翌月に変更</string>
     <string name="mtrl_picker_a11y_prev_month">前月に変更</string>
     <string name="mtrl_picker_announce_current_selection">現在の選択: %1$s</string>

@@ -1,30 +1,31 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Button } from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Button} from 'react-native';
 
 import {
     NavigationParams,
     NavigationScreenProp,
     NavigationState
-  } from 'react-navigation';
+} from 'react-navigation';
 
-const Home = ({navigation}) => {
-    return (
-        <View style={styles.container}>
-            <View style={styles.content}>
-                <View style={styles.circle}>
-                    <Text style={styles.icon}>!</Text>
+const Home = ({navigation}) =>
+    {
+        return (
+            <View style={styles.container}>
+                <View style={styles.content}>
+                    <View style={styles.circle}>
+                        <Text style={styles.icon}>!</Text>
+                    </View>
+                    <Text style={styles.heading}>ZGŁOŚ WYPADEK</Text>
                 </View>
-                <Text style={styles.heading}>ZGŁOŚ WYPADEK</Text>
+                <Button
+                    title="Ustawiernia"
+                    onPress={() =>
+                        navigation.navigate('Settings')
+                    }
+                />
             </View>
-            <Button
-                title="Ustawiernia"
-                onPress={() =>
-                    navigation.navigate('Settings')
-                }
-            />
-        </View>
-    );
-};
+        );
+    };
 
 const styles = StyleSheet.create({
     container: {

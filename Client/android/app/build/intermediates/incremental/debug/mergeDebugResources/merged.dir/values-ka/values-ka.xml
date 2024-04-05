@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d ახალი შეტყობინება</item>
-    <item quantity="other">%d ახალი შეტყობინება</item>
-  </plurals>
+        <item quantity="one">%d ახალი შეტყობინება</item>
+        <item quantity="other">%d ახალი შეტყობინება</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"მთავარზე გადასვლა"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"ზემოთ გადასვლა"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"სხვა ვარიანტები"</string>
@@ -29,7 +29,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"მოთხოვნის გადაგზავნა"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"ხმოვანი ძიება"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"გაზიარება:"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>-ით გაზიარება"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>-ით გაზიარება"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ჩაკეცვა"</string>
     <string gender="unknown" name="alert_description">გაფრთხილება</string>
     <string name="bottomsheet_action_collapse">ქვედა ფურცლის ჩაკეცვა</string>
@@ -40,7 +42,8 @@
     <string gender="unknown" name="catalyst_dev_menu_header">React Native-ის დეველოპერთა მენიუ (%1$s)</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">გაშვებულია %1$s</string>
     <string name="character_counter_content_description">შეყვანილია %2$d-დან %1$d სიმბოლო</string>
-    <string name="character_counter_overflowed_content_description">გადაჭარბებულია სიმბოლოთა ლიმიტი (%2$d-დან %1$d)</string>
+    <string name="character_counter_overflowed_content_description">გადაჭარბებულია სიმბოლოთა ლიმიტი (%2$d-დან %1$d)
+    </string>
     <string name="clear_text_end_icon_content_description">ტექსტის გასუფთავება</string>
     <string name="error_icon_content_description">შეცდომა</string>
     <string name="exposed_dropdown_menu_content_description">ჩამოსაშლელი მენიუს ჩვენება</string>
@@ -62,13 +65,17 @@
     <string name="material_timepicker_minute">წუთი</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">აირჩიეთ დრო</string>
-    <string name="material_timepicker_text_input_mode_description">დროის შეყვანისთვის ტექსტის შეყვანის რეჟიმზე გადართვა.</string>
+    <string name="material_timepicker_text_input_mode_description">დროის შეყვანისთვის ტექსტის შეყვანის რეჟიმზე
+        გადართვა.
+    </string>
     <string gender="unknown" name="menu_description">მენიუ</string>
     <string gender="unknown" name="menubar_description">მენიუს ზოლი</string>
     <string gender="unknown" name="menuitem_description">მენიუს ერთეული</string>
     <string name="mtrl_badge_numberless_content_description">ახალი შეტყობინება</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s-ის ამოშლა</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d-ზე მეტი ახალი შეტყობინება</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d-ზე მეტი ახალი
+        შეტყობინება
+    </string>
     <string name="mtrl_picker_a11y_next_month">შემდეგ თვეზე გადასვლა</string>
     <string name="mtrl_picker_a11y_prev_month">წინა თვეზე გადასვლა</string>
     <string name="mtrl_picker_announce_current_selection">ამჟამინდელი არჩევანი: %1$s</string>

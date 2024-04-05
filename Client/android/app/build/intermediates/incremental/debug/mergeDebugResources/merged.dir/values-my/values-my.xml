@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">အကြောင်းကြားချက်အသစ် %d ခု</item>
-    <item quantity="other">အကြောင်းကြားချက်အသစ် %d ခု</item>
-  </plurals>
+        <item quantity="one">အကြောင်းကြားချက်အသစ် %d ခု</item>
+        <item quantity="other">အကြောင်းကြားချက်အသစ် %d ခု</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"မူလနေရာကို ပြန်သွားရန်"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"အပေါ်သို့ ရွှေ့ရန်"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"နောက်ထပ် ရွေးစရာများ"</string>
     <string msgid="4692188335987374352" name="abc_action_mode_done">"ပြီးပြီ"</string>
     <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"အားလုံး ကြည့်ရန်"</string>
-    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"အက်ပ်တစ်ခုကို ရွေးရန်"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"အက်ပ်တစ်ခုကို ရွေးရန်"
+    </string>
     <string msgid="4215997306490295099" name="abc_capital_off">"ပိတ်"</string>
     <string msgid="884982626291842264" name="abc_capital_on">"ဖွင့်"</string>
     <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
@@ -26,10 +27,14 @@
     <string msgid="3741173234950517107" name="abc_searchview_description_clear">"ရှာဖွေမှုကို ဖယ်ရှားရန်"</string>
     <string msgid="693312494995508443" name="abc_searchview_description_query">"ရှာဖွေရန် မေးခွန်း"</string>
     <string msgid="3417662926640357176" name="abc_searchview_description_search">"ရှာရန်"</string>
-    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ရှာဖွေစရာ အချက်အလက်ကို ပေးပို့ရန်"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ရှာဖွေစရာ အချက်အလက်ကို ပေးပို့ရန်"
+    </string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"အသံဖြင့် ရှာရန်"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"နှင့် မျှဝေရန်"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ဖြင့် မျှဝေရန်"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g
+            id="APPLICATION_NAME">%s
+    </ns1:g> ဖြင့် မျှဝေရန်"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"လျှော့ပြရန်"</string>
     <string gender="unknown" name="alert_description">သတိပေးချက်</string>
     <string name="bottomsheet_action_collapse">အောက်ခြေအပိုဆောင်း စာမျက်နှာကို ပိတ်နိုင်သည်</string>
@@ -40,7 +45,9 @@
     <string gender="unknown" name="catalyst_dev_menu_header">Native Dev မီနူး (%1$s) ကို တုံ့ပြန်ရန်</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">%1$s ကို ပြသနေပါတယ်</string>
     <string name="character_counter_content_description">စာလုံးရေ %2$d တွင် %1$d ထည့်သွင်းထားသည်</string>
-    <string name="character_counter_overflowed_content_description">စာလုံးရေအကန့်အသတ် %2$d လုံးတွင် %1$d လုံးကျော်နေသည်</string>
+    <string name="character_counter_overflowed_content_description">စာလုံးရေအကန့်အသတ် %2$d လုံးတွင် %1$d
+        လုံးကျော်နေသည်
+    </string>
     <string name="clear_text_end_icon_content_description">စာသား ဖယ်ရှားရန်</string>
     <string gender="unknown" name="combobox_description">ရွေးရန်အကွက်</string>
     <string name="error_icon_content_description">အမှား</string>
@@ -63,13 +70,17 @@
     <string name="material_timepicker_minute">မိနစ်</string>
     <string name="material_timepicker_pm">ညနေ</string>
     <string name="material_timepicker_select_time">အချိန်ရွေးပါ</string>
-    <string name="material_timepicker_text_input_mode_description">အချိန်ထည့်သွင်းရန် စာသားထည့်သွင်းမှုမုဒ်သို့ ပြောင်းပါ။</string>
+    <string name="material_timepicker_text_input_mode_description">အချိန်ထည့်သွင်းရန် စာသားထည့်သွင်းမှုမုဒ်သို့
+        ပြောင်းပါ။
+    </string>
     <string gender="unknown" name="menu_description">မီနူး</string>
     <string gender="unknown" name="menubar_description">မီနူး ဘားတန်း</string>
     <string gender="unknown" name="menuitem_description">မီနူး အကြောင်းအရာ</string>
     <string name="mtrl_badge_numberless_content_description">အကြောင်းကြားချက်အသစ်</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s ကို ဖယ်ရှားရန်</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">အကြောင်းကြားချက်အသစ် %1$d ခု အထက်</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">အကြောင်းကြားချက်အသစ်
+        %1$d ခု အထက်
+    </string>
     <string name="mtrl_picker_a11y_next_month">နောက်လသို့ ပြောင်းရန်</string>
     <string name="mtrl_picker_a11y_prev_month">ယခင်လသို့ ပြောင်းရန်</string>
     <string name="mtrl_picker_announce_current_selection">လက်ရှိ ရွေးချယ်မှု- %1$s</string>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">%d novo obaveštenje</item>
-    <item quantity="few">%d nova obaveštenja</item>
-    <item quantity="other">%d novih obaveštenja</item>
-  </plurals>
+        <item quantity="one">%d novo obaveštenje</item>
+        <item quantity="few">%d nova obaveštenja</item>
+        <item quantity="other">%d novih obaveštenja</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Idite na početnu"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Idite nagore"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Još opcija"</string>
     <string msgid="4692188335987374352" name="abc_action_mode_done">"Gotovo"</string>
     <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Prikaži sve"</string>
-    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Izaberite aplikaciju"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Izaberite aplikaciju"
+    </string>
     <string msgid="4215997306490295099" name="abc_capital_off">"ISKLJUČENO"</string>
     <string msgid="884982626291842264" name="abc_capital_on">"UKLJUČENO"</string>
     <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
@@ -30,7 +31,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Pošaljite upit"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Glasovna pretraga"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Delite pomoću"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Delite pomoću aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Delite pomoću aplikacije <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Skupi"</string>
     <string name="bottomsheet_action_collapse">Skupite donju tabelu</string>
     <string name="bottomsheet_action_expand">Proširite donju tabelu</string>
@@ -38,7 +41,9 @@
     <string name="bottomsheet_drag_handle_clicked">Identifikator za prevlačenje je dvaput dodirnut</string>
     <string name="bottomsheet_drag_handle_content_description">Ručica za prevlačenje</string>
     <string name="character_counter_content_description">Uneti znakovi: %1$d od %2$d</string>
-    <string name="character_counter_overflowed_content_description">Prekoračeno je ograničenje broja znakova: %1$d od %2$d</string>
+    <string name="character_counter_overflowed_content_description">Prekoračeno je ograničenje broja znakova: %1$d od
+        %2$d
+    </string>
     <string name="clear_text_end_icon_content_description">Obriši tekst</string>
     <string name="error_icon_content_description">Greška</string>
     <string name="exposed_dropdown_menu_content_description">Prikaži padajući meni</string>
@@ -56,10 +61,13 @@
     <string name="material_timepicker_minute">Minut</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Izaberite vreme</string>
-    <string name="material_timepicker_text_input_mode_description">Pređite u režim unosa teksta radi unosa vremena.</string>
+    <string name="material_timepicker_text_input_mode_description">Pređite u režim unosa teksta radi unosa vremena.
+    </string>
     <string name="mtrl_badge_numberless_content_description">Novo obaveštenje</string>
     <string name="mtrl_chip_close_icon_content_description">Uklonite %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Novih obaveštenja: više od %1$d</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Novih obaveštenja:
+        više od %1$d
+    </string>
     <string name="mtrl_picker_a11y_next_month">Pređite na sledeći mesec</string>
     <string name="mtrl_picker_a11y_prev_month">Pređite na prethodni mesec</string>
     <string name="mtrl_picker_announce_current_selection">Aktuelni izbor: %1$s</string>

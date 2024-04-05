@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
-    <item quantity="one">התראה חדשה אחת (%d)</item>
-    <item quantity="two">%d התראות חדשות</item>
-    <item quantity="many">%d התראות חדשות</item>
-    <item quantity="other">%d התראות חדשות</item>
-  </plurals>
+        <item quantity="one">התראה חדשה אחת (%d)</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="many">%d התראות חדשות</item>
+        <item quantity="other">%d התראות חדשות</item>
+    </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"ניווט לדף הבית"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"ניווט למעלה"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"עוד אפשרויות"</string>
@@ -31,7 +31,9 @@
     <string msgid="1486535517437947103" name="abc_searchview_description_submit">"שליחת שאילתה"</string>
     <string msgid="2293578557972875415" name="abc_searchview_description_voice">"חיפוש קולי"</string>
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"שיתוף עם"</string>
-    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"שיתוף עם <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"שיתוף עם <ns1:g
+            id="APPLICATION_NAME">%s</ns1:g>"
+    </string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"כיווץ"</string>
     <string gender="unknown" name="alert_description">התראה</string>
     <string name="bottomsheet_action_collapse">כיווץ הגיליון התחתון</string>
@@ -71,7 +73,9 @@
     <string gender="unknown" name="menuitem_description">פריט בתפריט</string>
     <string name="mtrl_badge_numberless_content_description">התראה חדשה</string>
     <string name="mtrl_chip_close_icon_content_description">הסרה של %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">יותר מ-%1$d התראות חדשות</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">יותר מ-%1$d התראות
+        חדשות
+    </string>
     <string name="mtrl_picker_a11y_next_month">מעבר לחודש הבא</string>
     <string name="mtrl_picker_a11y_prev_month">מעבר לחודש הקודם</string>
     <string name="mtrl_picker_announce_current_selection">הבחירה הנוכחית: %1$s</string>
