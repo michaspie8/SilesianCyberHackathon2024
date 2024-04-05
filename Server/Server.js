@@ -50,7 +50,8 @@ connection.query(
     name VARCHAR(255) NOT NULL,
     surname VARCHAR(255) NOT NULL,
     description VARCHAR(255),
-    audioData VARCHAR(255)
+    audioData VARCHAR(255),
+    category VARCHAR(255) DEFAULT 'nieznane'
   ) ;`,
     (err) =>
     {
@@ -91,16 +92,6 @@ app.get("/test", (req, res) =>
 app.post("/wypadek", (req, res) =>
     {
         let {name, surname, desc, audioData} = req.body;
-        const sql = `INSERT INTO wypadek (id, name, surname, description, audioData) VALUES (null, ?, ?, ?, ?)`;
-        connection.query(sql, [name, surname, desc, audioData], (err, result) =>
-        {
-            //let transcription = "";
-            if (err)
-            {
-                console.log(err);
-                res.status(500).send("Error saving the data");
-            }
-        });
                 let category = "nieznane";
                 const categories = [
                     "wstrząs mózgu",
@@ -123,7 +114,7 @@ app.post("/wypadek", (req, res) =>
                             messages: [
                                 {
                                     role: "system",
-                                    content: "You will get two descriptions of the accident (second one is from speech to text). Please categorize the accident described in those descriptions. Available categories are: " + stringOfCategories + "; Description1 : " + desc + "; Description2 : " + audioData
+                                    content: "You will get two descriptions of the accident (second one is from speech to text, so the first description, if contains anything is more important). Please categorize the accident described in those descriptions, by only telling the name of category. Available categories are: " + stringOfCategories + "; Description1 : " + desc + "; Description2 : " + audioData
                                 }
                             ],
                             stream: true
@@ -134,17 +125,28 @@ app.post("/wypadek", (req, res) =>
                         }
                         console.log(responseStr);
                     };
+
                 f(audioData).then(() =>
                 {
                     console.log(responseStr);
                     //if the chat response is a category, save it
-                    if (categories.includes(responseStr))
+                    if (categories.includes(responseStr.toLowerCase()))
                     {
                         category = responseStr;
                     } else
                     {
                         category = "nieznane";
                     }
+                    const sql = `INSERT INTO wypadek (id, name, surname, description, audioData, category) VALUES (null, ?, ?, ?, ?, ?)`;
+                    connection.query(sql, [name, surname, desc, audioData, category], (err, result) =>
+                    {
+                        //let transcription = "";
+                        if (err)
+                        {
+                            console.log(err);
+                            res.status(500).send("Error saving the data");
+                        }
+                    });
                     res.status(201).send({message: "Data saved successfully", category: category});
                 }).catch(err => console.log(err));
 
