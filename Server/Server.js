@@ -1,4 +1,6 @@
 "use strict";
+//openai api key must be set in the environment variables
+console.log(process.env.OPENAI_API_KEY);
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -6,7 +8,7 @@ const morgan = require("morgan");
 const mysql = require("mysql");
 //openai client
 const openaiModule = require("openai");
-const openai = new openaiModule("sk-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx");
+const openai = new openaiModule();
 const host = {
     hostname: "localhost",
     port: process.env.PORT || "3000",
@@ -14,7 +16,6 @@ const host = {
 function fullhostname(){
     return this.hostname+":"+this.port;
 }
-
 const connection = mysql.createConnection({
   host: "localhost:3306",
     user: "root",
