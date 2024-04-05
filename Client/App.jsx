@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { PermissionsAndroid, Platform } from 'react-native';
 import Home from './src/components/Screens/Home.js';
 import SettingsScreen from './src/components/Screens/Settings.js/';
-
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -15,7 +15,38 @@ const port = '5000';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
+    const requestPermission = async () => {
+        if (Platform.OS === 'android') {
+            try {
+                const grants = await PermissionsAndroid.requestMultiple([
+                    PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
+                    PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+                    PermissionsAndroid.PERMISSIONS.RECORD_AUDIO,
+                ]);
 
+                console.log('write external stroage', grants);
+
+                if (
+                    grants['android.permission.WRITE_EXTERNAL_STORAGE'] ===
+                    PermissionsAndroid.RESULTS.GRANTED &&
+                    grants['android.permission.READ_EXTERNAL_STORAGE'] ===
+                    PermissionsAndroid.RESULTS.GRANTED &&
+                    grants['android.permission.RECORD_AUDIO'] ===
+                    PermissionsAndroid.RESULTS.GRANTED
+                ) {
+                    console.log('Permissions granted');
+                } else {
+                    console.log('All required permissions not granted');
+                    return;
+                }
+            } catch (err) {
+                console.warn(err);
+                return;
+            }
+        }
+    }
+
+    requestPermission();
   const [data, setData] = useState('');
 
   useEffect(() => {
