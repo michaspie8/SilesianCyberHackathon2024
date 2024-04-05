@@ -92,13 +92,13 @@ app.get("/test", (req, res) =>
     const headers = {
         "Content-Type": "application/json"
     };
-    //fetch() wypadek, with example data, audio from nagr_test.m4a
+    //fetch() wypadek, with example data
     fetch("http://" + fullhostname() + "/wypadek",
         {
             method: "POST",
             headers: headers,
             body: JSON.stringify({
-                name: "Jan", surname: "Kowalski", desc: "Przy parkowaniu mój samochód uderzył w słup.",
+                name: "Jan", surname: "Kowalski", desc: "Przewróciłem się i boli mnie ręka",
                 audioData: "test"
             })
         }
@@ -126,6 +126,7 @@ app.post("/wypadek", (req, res) =>
                 console.log("chat is categorizing the accident");
                 const f = async (transcription) =>
                     {
+                        //prompt for chat
                         const response = await openai.chat.completions.create({
                             model: "gpt-3.5-turbo-0125",
                             messages: [
