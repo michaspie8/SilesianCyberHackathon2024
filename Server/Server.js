@@ -22,6 +22,29 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(morgan("combined"));
 
+//if database does not exist, create a new one
+connection.query("CREATE DATABASE IF NOT EXISTS wypadek", (err) => {
+    if (err) {
+        console.log(err);
+    }
+});
+
+//create wypaddek table if it does not exist
+connection.query(
+    `CREATE TABLE IF NOT EXISTS wypadek (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    desc VARCHAR(255) NOT NULL,
+    audioData BYTE STREAM NOT NULL
+  )`,
+    (err) => {
+        if (err) {
+            console.log(err);
+        }
+    }
+);
+
 app.post("/wypadek", (req, res) => {
   const {id, name, surname, desc, audioData } = req.body;
   const sql = `INSERT INTO wypadek (id, name, surname, desc, audioData) VALUES (?, ?, ?, ?, ?)`;
