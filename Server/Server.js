@@ -49,8 +49,8 @@ connection.query(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     surname VARCHAR(255) NOT NULL,
-    description VARCHAR(255) NOT NULL,
-    audioData BLOB
+    description VARCHAR(255),
+    audioData VARCHAR(255)
   ) ;`,
     (err) =>
     {
@@ -91,48 +91,16 @@ app.get("/test", (req, res) =>
 app.post("/wypadek", (req, res) =>
     {
         let {name, surname, desc, audioData} = req.body;
-        let sql = '';
-        if (audioData !== "test")
-        {
-            sql = `INSERT INTO wypadek (id, name, surname, description, audioData) VALUES (null, ?, ?, ?, ?)`;
-        } else
-        {
-            sql = `INSERT INTO wypadek (id, name, surname, description, audioData) VALUES (null, ?, ?, ?, LOAD_FILE('./nagr_test.m4a'))`;
-        }
+        const sql = `INSERT INTO wypadek (id, name, surname, description, audioData) VALUES (null, ?, ?, ?, ?)`;
         connection.query(sql, [name, surname, desc, audioData], (err, result) =>
+        {
+            //let transcription = "";
+            if (err)
             {
-                let transcription = "";
-                if (err)
-                {
-                    console.log(err);
-                    res.status(500).send("Error saving the data");
-                } else
-                {
-
-                    if (audioData == "test")
-                    {
-                        console.log("chat is trying to transcribe audio")
-                        //stream from audio file ./nagr_test.m4a
-                        audioData = fs.createReadStream("./nagr_test.m4a");
-                        //try to convert audio to text
-                        openai.audio.transcriptions.create({
-                            file: audioData,
-                            model: "whisper-1",
-                        }).then((transcription) =>{transcription = transcription.text;
-                            console.log("chat has transcribed audio: " + transcription);}, (err) => console.log("audio err "+err));
-                    } else
-                    {
-                        if (audioData && audioData.length > 0)
-                        {
-                            //try to convert audio to text
-                            transcription = openai.audio.transcriptions.create({
-                                file: audioData,
-                                model: "whisper-1",
-                            }).then((transcription) =>{transcription = transcription.text;
-                                console.log("chat has transcribed audio: " + transcription);});
-                        }
-                    }
-                }
+                console.log(err);
+                res.status(500).send("Error saving the data");
+            }
+        });
                 let category = "nieznane";
                 const categories = [
                     "wstrząs mózgu",
@@ -155,19 +123,18 @@ app.post("/wypadek", (req, res) =>
                             messages: [
                                 {
                                     role: "system",
-                                    content: "You will get two descriptions of the accident (second one is from speech to text). Please categorize the accident described in those descriptions. Available categories are: " + stringOfCategories + "; Description1 : " + desc + "; Description2 : " + transcription
+                                    content: "You will get two descriptions of the accident (second one is from speech to text). Please categorize the accident described in those descriptions. Available categories are: " + stringOfCategories + "; Description1 : " + desc + "; Description2 : " + audioData
                                 }
                             ],
                             stream: true
                         });
-                        //
-                        for (const chunk of response)
-                        {
-                            responseStr += chunk;
+                        //iterate and get response
+                        for await (const chunk of response){
+                            responseStr += chunk.choices[0]?.delta?.content || "";
                         }
                         console.log(responseStr);
                     };
-                f(transcription).then(() =>
+                f(audioData).then(() =>
                 {
                     console.log(responseStr);
                     //if the chat response is a category, save it
@@ -180,8 +147,7 @@ app.post("/wypadek", (req, res) =>
                     }
                     res.status(201).send({message: "Data saved successfully", category: category});
                 }).catch(err => console.log(err));
-            }
-        );
+
     }
 );
 
