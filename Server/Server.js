@@ -117,6 +117,7 @@ app.get("/test", (req, res) =>
 //send data abt accident, save it to the database and categorize it
 app.post("/wypadek", (req, res) =>
     {
+        console.log("Received data");
         let {name, surname, desc, audioData} = req.body;
                 let category = "nieznane";
 
@@ -166,8 +167,9 @@ app.post("/wypadek", (req, res) =>
                         }
                     });
                     res.status(201).send({message: "Data saved successfully", category: category});
+                    return;
                 }).catch(err => console.log(err));
-
+        res.status(500).send("Error during categorization");
     }
 );
 
